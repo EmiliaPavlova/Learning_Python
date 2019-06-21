@@ -1,0 +1,5 @@
+first_name = input('Enter first name: ')
+last_name = input('Enter last name: ')
+age = int(input('Enter age: '))
+town = input('Enter town: ')
+print(f'You are {first_name} {last_name}, a {age}-years old person from {town}.')
