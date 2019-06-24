@@ -33,13 +33,18 @@ class Application(tkinter.Frame):
         tkinter.Button(text='Calculate', command=self.calculate)
 
     def calculate(self):
+        result = 'Not number/s'
+        bg = 'red'
+        fg = 'black'
         try:
             first_value = float(self.firstNumberEntry.get())
             second_value = float(self.secondNumberEntry.get())
-            result = first_value + second_value
-            self.resultLabel.config(text=str(result), bg='green', fg='white')
-        except ValueError:
-            self.resultLabel.config(text='Not number/s', bg='red', fg='black')
+            result = str(first_value + second_value)
+            bg = 'green'
+            fg = 'white'
+        finally:
+            self.resultLabel.config(text=result, bg=bg, fg=fg)
+            print(result)
 
 
 # create the application
