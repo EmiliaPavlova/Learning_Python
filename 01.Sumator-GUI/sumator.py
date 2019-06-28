@@ -6,12 +6,6 @@ class Application(tkinter.Frame):
         super().__init__(master)
 
         self.pack()
-
-    # widgets
-    def __init__(self, master=None):
-        super().__init__(master)
-
-        self.pack()
         self.create_widgets()
 
     def create_widgets(self):
