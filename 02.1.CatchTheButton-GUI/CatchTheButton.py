@@ -1,3 +1,5 @@
+# Not finished!
+
 import tkinter as tkinter
 import random
 
@@ -30,8 +32,6 @@ class Application(tkinter.Frame):
     # def on_leave(self, event):
 
     # def on_click(self):
-
-# https://softuni.bg/forum/18157/catch-the-button
 
 
 # create the application
