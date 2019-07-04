@@ -39,7 +39,9 @@ if 0 > number or number > 100:
 elif int(number / 10) < 2:
     result = ones.get(number)
 elif len(str(number)) == 2:
-    result = tenths.get(int(number / 10)) + ' ' + ones.get(number % 10) if number % 10 != 0 else tenths.get(int(number / 10))
+    result = tenths.get(int(number / 10)) + ' ' + ones.get(number % 10)\
+        if number % 10 != 0\
+        else tenths.get(int(number / 10))
 else:
     result = 'one hundred'
 
